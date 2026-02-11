@@ -30,7 +30,7 @@ public class Student{
         String Transaction_Print = "";
         for(int i = 0; i < Transactions.size(); i++){
             Transaction purchase = Transactions.get(i);
-            Transaction_Print = "( " + purchase + "), ";
+            Transaction_Print += "( " + purchase + "), ";
         }
         return "Name: " + name + " ID: " + ID + " Balance: " + balance + " Transactions: " + Transaction_Print;
     }
