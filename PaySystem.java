@@ -1,34 +1,40 @@
+import java.util.ArrayList;
+
 public class PaySystem{
     private string
 
-    ArrayList<String> students = new ArrayList<string>();
-    private static int ID_Gen = 0;
+    private ArrayList<Student> students;
+    
+    private static int ID_Gen = 1;
 
-    public addStudent(name){
-        name = myName
-    }
-
-    public addFunds(idNo, amount){
-
-    }
-
-    public chargeLunch(idNo){
+    public void addStudent(string name){
+        ID_Gen++;
+        Student newStudent = new Student(name, ID_Gen);
+        students.add(newStudent);
 
     }
 
-    public showNegativeBalances(){
+    public void addFunds(idNo, int amount){
 
     }
 
-    public showTransactionByDay(){
+    public void chargeLunch(idNo){
 
     }
 
-    public displayStudent(idNo){
+    public void showNegativeBalances(){
 
     }
 
-    public toString(){
+    public void showTransactionByDay(){
+
+    }
+
+    public void displayStudent(idNo){
+
+    }
+
+    public String toString(){
 
     }
 
