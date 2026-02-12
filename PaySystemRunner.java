@@ -6,7 +6,7 @@ public class PaySystemRunner {
 
         //Add Students
         poly.addStudent("Kyan");
-        poly.addStudent("Emelio");
+        poly.addStudent("Emilio");
         poly.addStudent("Hudson");
 
         //Add funds
