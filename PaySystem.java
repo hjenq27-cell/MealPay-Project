@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 public class PaySystem{
-    public ArrayList<Student>Students;
+    private ArrayList<Student>Students;
 
     public PaySystem(){
         Students = new ArrayList<Student>();
