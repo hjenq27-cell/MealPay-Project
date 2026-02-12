@@ -17,17 +17,30 @@ public class PaySystem{
 
     }
 
-    public void chargeSpecificLunch(int idNo){
+    public void chargeSpecificLunch(int idNo, String date){
         for(int i = 0; i < Students.size(); i++){
             Student s = Students.get(i);
             if(s.getID() == idNo){
-                s.charge_lunch();
+                s.charge_lunch(date);
             }
         }
 
     }
 
-    public showNegativeBalances(){
+    public void showNegativeBalances(String date){
+        for(int i = 0; i < Students.size();i++){
+            Student s = Students.get(i);
+            Transaction myTrans = s.getTransactions(i);
+            for(int j = 0; j < myTrans.size(); j++){
+                Transaction date = myTrans.get(i);
+                if((myDate.getDate).equals(date)){
+                    System.out.println("(" + myDate + ")" + " by " + s.getName() + " ID: " + s.getID());
+                }
+
+            }
+        }
+
+
 
     }
 
