@@ -1,36 +1,33 @@
-import java.util.ArrayList;
 
 public class PaySystem{
 
-    private ArrayList<Student> students = new ArrayList<>();
-    
-    public void addStudent(String name){
-       
+    ArrayList<String> students = new ArrayList<string>();
+
+    public addStudent(name){
+        
     }
-}
 
-    public void addFunds(int idNo, int amount){
-
+    public addFunds(idNo, amount){
 
     }
 
-    public void chargeLunch(int idNo){
+    public chargeLunch(idNo){
 
     }
 
-    public void showNegativeBalances(){
+    public showNegativeBalances(){
 
     }
 
-    public void showTransactionByDay(){
+    public showTransactionByDay(){
 
     }
 
-    public void displayStudent(int idNo){
+    public displayStudent(idNo){
 
     }
 
-    public String toString(){
+    public toString(){
 
     }
 
