@@ -8,7 +8,9 @@ public class PaySystem{
 
     }
 
-    public addStudent(name){
+    public void addStudent(String name){
+        Student s = new Student(name);
+        Students.add(s);
 
         
     }
