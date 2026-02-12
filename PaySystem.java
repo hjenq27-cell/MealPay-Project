@@ -11,12 +11,12 @@ public class PaySystem{
     public boolean addFunds(int idNo, String date, double amount){
         //loop through each student, find the student with matchin ID, add amount
         for(Student s: students){
-            if(s.getID() == myID){
+            if(s.getID() == idNo){
                 s.makeCharge(date, amount);
                 return true;
             }
-            return false;
         }
+            return false;
 
     }
 
