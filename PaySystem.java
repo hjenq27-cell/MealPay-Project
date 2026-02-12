@@ -1,24 +1,25 @@
 import java.util.ArrayList;
 
 public class PaySystem{
-    private string
 
     private ArrayList<Student> students;
     
     private static int ID_Gen = 1;
 
-    public void addStudent(string name){
-        ID_Gen++;
+    public void addStudent(String name){
         Student newStudent = new Student(name, ID_Gen);
+        ID_Gen++;
         students.add(newStudent);
 
     }
 
-    public void addFunds(idNo, int amount){
-
+    public void addFunds(int idNo, int amount){
+        while(true){
+            
+        }
     }
 
-    public void chargeLunch(idNo){
+    public void chargeLunch(int idNo){
 
     }
 
@@ -30,7 +31,7 @@ public class PaySystem{
 
     }
 
-    public void displayStudent(idNo){
+    public void displayStudent(int idNo){
 
     }
 
