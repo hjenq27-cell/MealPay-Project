@@ -1,7 +1,10 @@
 
+import java.util.ArrayList;
 public class PaySystem{
+    public ArrayList<Student>Students;
 
-    ArrayList<String> students = new ArrayList<string>();
+
+
 
     public addStudent(name){
         
