@@ -37,8 +37,10 @@ public class Student{
         return ID;
     }
 
-    public void charge_lunch(){
+    public void charge_lunch(String date){
         balance -= 7;
+        Transaction newTransaction = new Transaction(date);
+        Transactions.add(newTransaction);
     }
 
 
