@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 public class Student{
-    public String name;
-    public int ID;
-    public double balance;
-    public ArrayList <Transaction> Transactions;
+    private String name;
+    private int ID;
+    private double balance;
+    private ArrayList <Transaction> Transactions;
     private static int ID_Gen = 0;
     
     public Student(String myname, int myid){
