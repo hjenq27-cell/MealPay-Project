@@ -26,6 +26,11 @@ public class Student{
         return ID;
     }
 
+    public void charge_lunch(){
+        balance -= 7;
+    }
+
+
     public String toString(){
         String Transaction_Print = "";
         for(int i = 0; i < Transactions.size(); i++){
