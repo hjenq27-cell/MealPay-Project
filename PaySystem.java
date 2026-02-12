@@ -17,7 +17,13 @@ public class PaySystem{
 
     }
 
-    public chargeLunch(idNo){
+    public void chargeLunch(int idNo){
+        for(int i = 0; i < Students.size(); i++){
+            Student s = Students.get(i);
+            if(s.getID() == idNo){
+                s.charge_lunch();
+            }
+        }
 
     }
 
