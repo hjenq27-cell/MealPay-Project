@@ -11,8 +11,6 @@ public class PaySystem{
     public void addStudent(String name){
         Student s = new Student(name);
         Students.add(s);
-
-        
     }
 
     public addFunds(idNo, amount){
