@@ -1,46 +1,52 @@
-
 import java.util.ArrayList;
+
 public class PaySystem{
-    private ArrayList<Student>Students;
 
-    public PaySystem(){
-        Students = new ArrayList<Student>();
-
-    }
-
+    private ArrayList<Student> students = new ArrayList<>();
+    
     public void addStudent(String name){
-        Student s = new Student(name);
-        Students.add(s);
+       
     }
 
-    public addFunds(idNo, amount){
-
-    }
-
-    public void chargeSpecificLunch(int idNo){
-        for(int i = 0; i < Students.size(); i++){
-            Student s = Students.get(i);
-            if(s.getID() == idNo){
-                s.charge_lunch();
+    public boolean addFunds(int idNo, double amount){
+        //loop through each student, find the student with matchin ID, add amount
+        for(Student s: students){
+            if(s.getID() == idNO){
+                s.makeCharge(date, amount);
+                return true;
             }
         }
+        
+        
+        balance += amount;
+        transactions.add(new Transaction(amount));
+
+
 
     }
 
-    public showNegativeBalances(){
+    public void chargeLunch(int idNo){
+    
+    }
+
+    public void showNegativeBalances(){
 
     }
 
-    public showTransactionByDay(){
+    public void showTransactionByDay(){
 
     }
 
-    public displayStudent(idNo){
-
+    public void displayStudent(int idNo){
+        for(Student s : students){
+            if(s.getBalance()<0){
+                System.out.println(s);
+            }
+        }
     }
 
-    public toString(){
-
+    public String toString(){
+        return null;
     }
 
 }
