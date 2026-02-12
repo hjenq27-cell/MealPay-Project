@@ -15,6 +15,12 @@ public class Student{
         Transactions = new ArrayList<Transaction>();
     }
 
+    public void makeCharge(String date, double amount){
+        balance += amount;
+        Transactions.add(new Transaction(date, amount));
+    }
+
+
     public ArrayList<Transaction> getTransactions() {
     return Transactions;
     }

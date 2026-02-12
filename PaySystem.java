@@ -8,20 +8,15 @@ public class PaySystem{
        
     }
 
-    public boolean addFunds(int idNo, double amount){
+    public boolean addFunds(int idNo, String date, double amount){
         //loop through each student, find the student with matchin ID, add amount
         for(Student s: students){
-            if(s.getID() == idNO){
+            if(s.getID() == myID){
                 s.makeCharge(date, amount);
                 return true;
             }
+            return false;
         }
-        
-        
-        balance += amount;
-        transactions.add(new Transaction(amount));
-
-
 
     }
 
