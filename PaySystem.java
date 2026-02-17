@@ -36,10 +36,10 @@ public class PaySystem{
     public void showNegativeBalances(String date){
         for(int i = 0; i < students.size();i++){
             Student s = students.get(i);
-            Transaction myTrans = s.getTransactions(i);
+            ArrayList<Transaction> myTrans = s.getTransactions();
             for(int j = 0; j < myTrans.size(); j++){
-                Transaction date = myTrans.get(i);
-                if((myDate.getDate).equals(date)){
+                Transaction myDate = myTrans.get(i);
+                if((myDate.getDate()).equals(date)){
                     System.out.println("(" + myDate + ")" + " by " + s.getName() + " ID: " + s.getID());
                 }
 
