@@ -37,6 +37,15 @@ public class Student{
         return ID;
     }
 
+    public void TransactionsByDate(String targetDate) {
+        for (Transaction t : this.Transactions) {
+            if (t.getDate().equals(targetDate)) {
+            System.out.println(t); 
+            }
+        }
+    }
+
+
     public void charge_lunch(String date){
         balance -= 7;
         Transaction newTransaction = new Transaction(date);
