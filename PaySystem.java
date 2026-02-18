@@ -5,7 +5,7 @@ public class PaySystem{
     private ArrayList<Student> students = new ArrayList<>();
     
     public void addStudent(String name){
-       
+        students.add(new Student(name));
     }
 
     public boolean addFunds(int idNo, String date, double amount){
