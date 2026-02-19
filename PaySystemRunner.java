@@ -15,18 +15,21 @@ public class PaySystemRunner {
 
         //Charge lunch
         poly.chargeSpecificLunch(1,"2/4");
+        poly.chargeSpecificLunch(2,"2/4");
+        poly.chargeSpecificLunch(3,"2/4");
         poly.chargeSpecificLunch(2,"2/7");
         poly.chargeSpecificLunch(2,"2/15");
         poly.chargeSpecificLunch(3,"2/27");
 
         //Show Negative Balances
-        poly.showNegativeBalances("2/24");
+        poly.showNegativeBalances("2/27");
 
         //Show Transaction By Day
-        //poly.showTransactionByDay("2/4");
+
+        poly.showTransactionByDay("2/4");
         
         //Display Students
-        poly.displayStudents(3);
+        poly.displayStudent(3);
 
         //
 
