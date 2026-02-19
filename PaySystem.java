@@ -30,36 +30,24 @@ public class PaySystem{
     }
 
     public void showNegativeBalances(String date){
-        for(int i = 0; i < students.size();i++){
-            Student s = students.get(i);
-
-            ArrayList<Transaction>myTrans = s.getTransactions();
-            
-            for(int j = 0; j < myTrans.size(); j++){
-                Transaction myDate = myTrans.get(j);
-                
-                if((myDate.getDate()).equals(date)){
-                    System.out.println("(" + myDate + ")" + " by " + s.getName() + " ID: " + s.getID());
-                    break;
-                }
-
+         for(Student s : students){
+            if(s.getBalance()<0){
+                System.out.println(s);
             }
-        }
-
-
-
+         }
     }
 
     public void showTransactionByDay(String date){
-    for (Student s : students) {
+    
+        for (Student s : students) {
         s.TransactionsByDate(date);
-    }
+        }
 }
 
     public void displayStudent(int idNo){
-        for(Student s : students){
-            if(s.getBalance()<0){
-                System.out.println(s);
+       for (Student s : students) {
+            if (s.getID() == idNo){
+                System.out.println(s.toString());
             }
         }
     }
@@ -69,3 +57,4 @@ public class PaySystem{
     }
 
 }
+
